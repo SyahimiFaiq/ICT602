@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Electricity Bill"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/unitUsedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:text="Number of Units Used (kWh)"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/unitUsedEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unitUsedLabel"
+        android:inputType="numberDecimal"
+        android:hint="Enter number of units used"
+        android:background="@drawable/edittext_background"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/rebatePercentageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unitUsedEditText"
+        android:layout_marginTop="16dp"
+        android:text="Rebate Percentage (0% - 5%)"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/rebatePercentageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rebatePercentageLabel"
+        android:inputType="numberDecimal"
+        android:hint="Enter rebate percentage"
+        android:background="@drawable/edittext_background"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rebatePercentageEditText"
+        android:layout_marginTop="16dp"
+        android:text="Calculate"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/totalChargeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/totalChargeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/totalChargeLabel"
+        android:layout_below="@id/calculateButton"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/finalCostLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalChargeLabel"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/finalCostTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/finalCostLabel"
+        android:layout_below="@id/totalChargeLabel"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

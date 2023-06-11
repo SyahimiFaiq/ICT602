@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/profile_background"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"/>
+
+        <ImageView
+            android:id="@+id/photoImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/titleTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/faiq"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/developersTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/photoImageView"
+            android:layout_marginTop="16dp"
+            android:text="Developers:\nSyahimi Faiq Bin Mohd Kamal"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/groupTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/developersTextView"
+            android:layout_marginTop="8dp"
+            android:text="Group: RCS240 5B"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/studentNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/groupTextView"
+            android:layout_marginTop="8dp"
+            android:text="Student Number: 2022907825"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/programmeCodeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/studentNumberTextView"
+            android:layout_marginTop="8dp"
+            android:text="Programme Code: CS240"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/infoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/programmeCodeTextView"
+            android:layout_marginTop="32dp"
+            android:text="Information:\nThis app allows you to estimate your electricity bill based on usage."
+            android:textSize="20sp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/copyrightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/infoTextView"
+            android:layout_marginTop="32dp"
+            android:text="© 2023 Syahimi Faiq. All rights reserved."
+            android:textSize="18sp"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/websiteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/copyrightTextView"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:onClick="openWebsite"
+            android:text="Visit Github page"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/billEstimationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/websiteButton"
+            android:layout_marginTop="16dp"
+            android:text="Estimate Electricity Bill"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_background"
+            android:onClick="openEstimation"
+            tools:ignore="OnClick" />
+
+    </RelativeLayout>
+
+</ScrollView>
